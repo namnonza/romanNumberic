@@ -4,7 +4,7 @@ public class Count {
         if (i==4) {
             return "IV";
         }
-        if (i>5) {
+        if (i>=5) {
             i -= 5;
             ans = "V";
         }
