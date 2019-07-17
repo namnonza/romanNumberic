@@ -7,6 +7,12 @@ public class Count {
         if (i==9) {
             return "IX";
         }
+
+        if (i >= 10) {
+            i -= 10;
+            ans = "X";
+        }
+
         if (i>=5) {
             i -= 5;
             ans = "V";

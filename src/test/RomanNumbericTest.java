@@ -63,4 +63,10 @@ public class RomanNumbericTest {
         String actual = count.romanNumberic(9);
         assertEquals("IX", actual);
     }
+
+    @Test
+    public void itShouldXWhenInputIS10 () {
+        String actual = count.romanNumberic(10);
+        assertEquals("X", actual);
+    }
 }
