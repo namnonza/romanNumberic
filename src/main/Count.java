@@ -1,5 +1,8 @@
 public class Count {
     public String romanNumberic(int i) {
+        if (i >= 5000 || i <= 0) {
+            return "value out of bound";
+        }
         String ans = "";
         while (i >= 1000) {
             i -= 1000;

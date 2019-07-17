@@ -214,4 +214,16 @@ public class RomanNumbericTest {
         String actual = count.romanNumberic(4999);
         assertEquals("MMMMCMXCIX", actual);
     }
+
+    @Test
+    public void itShouldOutOfBoundWhenInputISMorethan4999 () {
+        String actual = count.romanNumberic(5000);
+        assertEquals("value out of bound", actual);
+    }
+
+    @Test
+    public void itShouldOutOfBoundWhenInputISLessthen1 () {
+        String actual = count.romanNumberic(0);
+        assertEquals("value out of bound", actual);
+    }
 }
