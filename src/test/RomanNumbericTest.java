@@ -167,4 +167,21 @@ public class RomanNumbericTest {
         assertEquals("L", actual);
     }
 
+    @Test
+    public void itShouldLXIXWhenInputIS69 () {
+        String actual = count.romanNumberic(69);
+        assertEquals("LXIX", actual);
+    }
+
+    @Test
+    public void itShouldLXXXIVWhenInputIS84 () {
+        String actual = count.romanNumberic(84);
+        assertEquals("LXXXIV", actual);
+    }
+
+    @Test
+    public void itShouldXCWhenInputIS90 () {
+        String actual = count.romanNumberic(99);
+        assertEquals("XCIX", actual);
+    }
 }
