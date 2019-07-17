@@ -180,7 +180,7 @@ public class RomanNumbericTest {
     }
 
     @Test
-    public void itShouldXCWhenInputIS90 () {
+    public void itShouldXCIXWhenInputIS99 () {
         String actual = count.romanNumberic(99);
         assertEquals("XCIX", actual);
     }
