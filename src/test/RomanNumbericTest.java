@@ -83,11 +83,11 @@ public class RomanNumbericTest {
         assertEquals("XIII", actual);
     }
 
-    @Test
-    public void itShouldTRUEWhenIIIIcontainedWhenInputIS14() {
-        boolean actual = count.romanNumberic(14).contains("IIII");
-        assertTrue(actual);
-    }
+//    @Test
+//    public void itShouldTRUEWhenIIIIcontainedWhenInputIS14() {
+//        boolean actual = count.romanNumberic(14).contains("IIII");
+//        assertTrue(actual);
+//    }
 
     @Test
     public void itShouldXIVWhenInputIS14 () {
