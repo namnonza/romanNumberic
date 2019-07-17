@@ -5,49 +5,39 @@ public class Count {
         }
         String ans = "";
         while (i >= 1000) {
-            i -= 1000;
             ans += "M";
+            i -= 1000;
         }
         if (i >= 500) {
-            i -= 500;
             ans += "D";
+            i -= 500;
         }
         while (i >= 100) {
-            i -= 100;
             ans += "C";
+            i -= 100;
         }
+        ans = ans.replace("DCCCC", "CM");
+        ans = ans.replace("CCCC", "CD");
         if (i >= 50) {
-            i -= 50;
             ans += "L";
+            i -= 50;
         }
         while (i >= 10) {
             ans += "X";
             i -= 10;
         }
+        ans = ans.replace("LXXXX", "XC");
+        ans = ans.replace("XXXX", "XL");
         if (i>=5) {
-            i -= 5;
             ans += "V";
+            i -= 5;
         }
-        for (int j = 0; j < i; j++)
+        while (i >= 0) {
             ans += "I";
-        // if ans: 900 => 1000 - 100
-        if (ans.contains("DCCCC"))
-            ans = ans.replace("DCCCC", "CM");
-        // if ans: 400 => 500 - 100
-        if (ans.contains("CCCC"))
-            ans = ans.replace("CCCC", "CD");
-        // if ans: 90 => 100 - 10
-        if (ans.contains("LXXXX"))
-            ans = ans.replace("LXXXX", "XC");
-        // if ans: 40 => 50 - 10
-        if (ans.contains("XXXX"))
-            ans = ans.replace("XXXX", "XL");
-        // if ans: 9 => 10 - 1
-        if (ans.contains("VIIII"))
-            ans = ans.replace("VIIII", "IX");
-        // if ans: 4 => 5 - 1
-        if (ans.contains("IIII"))
-            ans = ans.replace("IIII", "IV");
+            i -= 1;
+        }
+        ans = ans.replace("VIIII", "IX");
+        ans = ans.replace("IIII", "IV");
         return ans;
     }
 }
