@@ -1,7 +1,7 @@
 public class Count {
     public String romanNumberic(int i) {
         String ans = "";
-        if (i >= 100) {
+        while (i >= 100) {
             i -= 100;
             ans += "C";
         }
