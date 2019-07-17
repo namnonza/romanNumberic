@@ -1,10 +1,6 @@
 public class Count {
     public String romanNumberic(int i) {
         String ans = "";
-        if (i==9) {
-            return "IX";
-        }
-
         if (i >= 10) {
             i -= 10;
             ans += "X";
@@ -16,6 +12,8 @@ public class Count {
         }
         for (int j = 0; j < i; j++)
             ans += "I";
+        if (ans.contains("VIIII"))
+            ans = ans.replace("VIIII", "IX");
         if (ans.contains("IIII"))
             ans = ans.replace("IIII", "IV");
         return ans;

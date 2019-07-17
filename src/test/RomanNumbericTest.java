@@ -107,4 +107,9 @@ public class RomanNumbericTest {
         assertEquals("XVIII", actual);
     }
 
+    @Test
+    public void itShouldXIXWhenInputIS19 () {
+        String actual = count.romanNumberic(19);
+        assertEquals("XIX", actual);
+    }
 }
