@@ -4,6 +4,9 @@ public class Count {
         if (i==4) {
             return "IV";
         }
+        if (i==9) {
+            return "IX";
+        }
         if (i>=5) {
             i -= 5;
             ans = "V";
