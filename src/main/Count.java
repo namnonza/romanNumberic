@@ -4,6 +4,8 @@ public class Count {
             return "IV";
         if (i==5)
             return "V";
+        if (i==6)
+            return "VI";
         String ans = "";
         for (int j = 0; j < i; j++)
             ans += "I";

@@ -39,4 +39,10 @@ public class RomanNumbericTest {
         String actual = count.romanNumberic(5);
         assertEquals("V", actual);
     }
+
+    @Test
+    public void itShouldVIWhenInputIS6 () {
+        String actual = count.romanNumberic(6);
+        assertEquals("VI", actual);
+    }
 }
