@@ -1,21 +1,18 @@
 public class Count {
     public String romanNumberic(int i) {
         String ans = "";
-        if (i >= 20) {
-            i -= 20;
-            ans += "XX";
-        }
-        if (i >= 10) {
-            i -= 10;
+        while (i >= 10) {
             ans += "X";
+            i -= 10;
         }
-
         if (i>=5) {
             i -= 5;
             ans += "V";
         }
         for (int j = 0; j < i; j++)
             ans += "I";
+        if (ans.contains("XXXX"))
+            ans = ans.replace("XXXX", "XL");
         if (ans.contains("VIIII"))
             ans = ans.replace("VIIII", "IX");
         if (ans.contains("IIII"))

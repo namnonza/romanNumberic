@@ -150,8 +150,15 @@ public class RomanNumbericTest {
     }
 
     @Test
-    public void isShouldXXXWhenInputIS30 () {
+    public void itShouldXXXWhenInputIS30 () {
         String actual = count.romanNumberic(30);
         assertEquals("XXX", actual);
     }
+
+    @Test
+    public void itShouldXLWhenInputIS40 () {
+        String actual = count.romanNumberic(40);
+        assertEquals("XL", actual);
+    }
+
 }
