@@ -77,8 +77,14 @@ public class RomanNumbericTest {
     }
 
     @Test
-    public void isShouldXIIIWhenInputIS13 () {
+    public void itShouldXIIIWhenInputIS13 () {
         String actual = count.romanNumberic(13);
         assertEquals("XIII", actual);
+    }
+
+    @Test
+    public void itShouldXIVWhenInputIS14 () {
+        String actual = count.romanNumberic(14);
+        assertEquals("XIV", actual);
     }
 }
