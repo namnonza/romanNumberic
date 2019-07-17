@@ -22,5 +22,11 @@ public class RomanNumbericTest {
         assertEquals("II", actual);
     }
 
+    @Test
+    public void itShouldIIIWhenInputIS3 () {
+        String actual = count.romanNumberic(3);
+        assertEquals("III", actual);
+    }
+
 
 }
