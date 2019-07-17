@@ -34,4 +34,9 @@ public class RomanNumbericTest {
         assertEquals("IV", actual);
     }
 
+    @Test
+    public void itShouldVWhenInputIS5 () {
+        String actual = count.romanNumberic(5);
+        assertEquals("V", actual);
+    }
 }
