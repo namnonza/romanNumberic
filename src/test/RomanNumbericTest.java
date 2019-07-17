@@ -112,4 +112,10 @@ public class RomanNumbericTest {
         String actual = count.romanNumberic(19);
         assertEquals("XIX", actual);
     }
+
+    @Test
+    public void itShouldXXWhenInputIS20 () {
+        String actual = count.romanNumberic(20);
+        assertEquals("XX", actual);
+    }
 }

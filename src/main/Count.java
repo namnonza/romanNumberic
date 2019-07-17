@@ -1,6 +1,10 @@
 public class Count {
     public String romanNumberic(int i) {
         String ans = "";
+        if (i >= 20) {
+            i -= 20;
+            ans += "XX";
+        }
         if (i >= 10) {
             i -= 10;
             ans += "X";
