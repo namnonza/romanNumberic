@@ -1,6 +1,10 @@
 public class Count {
     public String romanNumberic(int i) {
         String ans = "";
+        if (i >= 500) {
+            i -= 500;
+            ans += "D";
+        }
         while (i >= 100) {
             i -= 100;
             ans += "C";
