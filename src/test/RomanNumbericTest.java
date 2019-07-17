@@ -9,4 +9,11 @@ public class RomanNumbericTest {
         String actual = count.romanNumberic(1);
         assertEquals("I", actual);
     }
+
+    @Test
+    public void itShouldIIWhenInputIS2 () {
+        Count count = new Count();
+        String actual = count.romanNumberic(2);
+        assertEquals("II", actual);
+    }
 }
