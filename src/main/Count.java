@@ -19,6 +19,8 @@ public class Count {
         }
         for (int j = 0; j < i; j++)
             ans += "I";
+        if (ans.contains("CCCC"))
+            ans = ans.replace("CCCC", "CD");
         // if ans: 90 => 100 - 10
         if (ans.contains("LXXXX"))
             ans = ans.replace("LXXXX", "XC");
