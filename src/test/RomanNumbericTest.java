@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class RomanNumbericTest {
     Count count;
@@ -83,8 +84,15 @@ public class RomanNumbericTest {
     }
 
     @Test
+    public void itShouldTRUEWhenIIIIcontainedWhenInputIS14() {
+        boolean actual = count.romanNumberic(14).contains("IIII");
+        assertTrue(actual);
+    }
+
+    @Test
     public void itShouldXIVWhenInputIS14 () {
         String actual = count.romanNumberic(14);
         assertEquals("XIV", actual);
     }
+
 }
