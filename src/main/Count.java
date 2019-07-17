@@ -7,12 +7,12 @@ public class Count {
 
         if (i >= 10) {
             i -= 10;
-            ans = "X";
+            ans += "X";
         }
 
         if (i>=5) {
             i -= 5;
-            ans = "V";
+            ans += "V";
         }
         for (int j = 0; j < i; j++)
             ans += "I";

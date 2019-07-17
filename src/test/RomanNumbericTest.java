@@ -95,4 +95,10 @@ public class RomanNumbericTest {
         assertEquals("XIV", actual);
     }
 
+    @Test
+    public void itShouldXVWhenInputIS15 () {
+        String actual = count.romanNumberic(15);
+        assertEquals("XV", actual);
+    }
+
 }
