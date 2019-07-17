@@ -161,4 +161,10 @@ public class RomanNumbericTest {
         assertEquals("XL", actual);
     }
 
+    @Test
+    public void itShouldLWhenInputIS50 () {
+        String actual = count.romanNumberic(50);
+        assertEquals("L", actual);
+    }
+
 }
